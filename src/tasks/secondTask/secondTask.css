@@ -1,19 +1,23 @@
-.yellow {
+.color0 {
   background-color: yellow;
 }
 
-.blue {
+.color1 {
   background-color: blue;
 }
 
-.red {
+.color2 {
   background-color: red;
 }
 
-.green {
+.color3 {
   background-color: green;
 }
 
-.orange {
+.color4 {
   background-color: orange;
+}
+
+.btnList {
+  list-style: none;
 }

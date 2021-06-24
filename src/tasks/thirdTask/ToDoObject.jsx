@@ -1,11 +1,12 @@
 import React from 'react';
-import Mon from './img/monday.jpg';
-import Tue from './img/tuesday.jpg';
-import Wed from './img/wednesday.jpg';
-import Thu from './img/thursday.jpg';
-import Fri from './img/friday.jpg';
-import Sat from './img/saturday.jpg';
-import Sun from './img/sunday.jpg';
+import Mon from '../img/monday.jpg';
+import Tue from '../img/tuesday.jpg';
+import Wed from '../img/wednesday.jpg';
+import Thu from '../img/thursday.jpg';
+import Fri from '../img/friday.jpg';
+import Sat from '../img/saturday.jpg';
+import Sun from '../img/sunday.jpg';
+import MakeList from './MakeList';
 
 const data = [
   {
@@ -137,27 +138,12 @@ const styles = {
 };
 
 export default function ToDoObject() {
-  function makeList(list) {
-    let todos = list.todos;
-    return (
-      <ul style={styles.ul}>
-        <li>
-          <img src={list.img}></img>
-        </li>
-        {Object.values(todos).map((key) => (
-          <li
-            key={key.title}
-            style={key.completed ? styles.liDone : styles.liAtWork}
-          >
-            {key.title}
-          </li>
-        ))}
-      </ul>
-    );
-  }
-
   const listTemplate = data.map((list, i) => {
-    return <li key={i}>{makeList(list)}</li>;
+    return (
+      <li key={i}>
+        <MakeList list={list} />
+      </li>
+    );
   });
 
   return (

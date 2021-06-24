@@ -1,12 +1,12 @@
 import React from 'react';
 import ToDoItem from './ToDoItem';
-import Mon from './img/monday.jpg';
-import Tue from './img/tuesday.jpg';
-import Wed from './img/wednesday.jpg';
-import Thu from './img/thursday.jpg';
-import Fri from './img/friday.jpg';
-import Sat from './img/saturday.jpg';
-import Sun from './img/sunday.jpg';
+import Mon from '../img/monday.jpg';
+import Tue from '../img/tuesday.jpg';
+import Wed from '../img/wednesday.jpg';
+import Thu from '../img/thursday.jpg';
+import Fri from '../img/friday.jpg';
+import Sat from '../img/saturday.jpg';
+import Sun from '../img/sunday.jpg';
 
 const styles = {
   ul: {

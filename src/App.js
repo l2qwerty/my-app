@@ -1,7 +1,7 @@
-import '../App.css';
-import Button from './secondTask';
-import ToDoList from './thirdTask';
-import ToDoObject from './ToDoObject';
+import './App.css';
+import Buttons from './tasks/secondTask/Buttons';
+import ToDoList from './tasks/thirdTask/thirdTask';
+import ToDoObject from './tasks/thirdTask/ToDoObject';
 
 function App() {
   const todos = [
@@ -16,10 +16,11 @@ function App() {
     { id: 9, completed: false, title: 'Купить кошечке корминок' },
     { id: 10, completed: false, title: 'Лечь спать' },
   ];
+  const btnText = ['first', 'second', 'third', 'fourth', 'fifth'];
   return (
     <div className='App'>
-      {/* <Button /> */}
-      {/* <ToDoList todos={todos} /> */}
+      <Buttons btnText={btnText} />
+      <ToDoList todos={todos} />
       <ToDoObject />
     </div>
   );
